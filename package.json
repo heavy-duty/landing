@@ -1,0 +1,24 @@
+{
+  "name": "@heavy-duty/landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+github.com:heavy-duty/landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "github.com:heavy-duty/landing/issues"
+  },
+  "homepage": "github.com:heavy-duty/landing#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-fetch": "^2.6.2"
+  }
+}

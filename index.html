@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>HeavyDuty - Document-based storage for Solana dapps</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="topbar">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="Main logo" />
+        </div>
+        <h1>HEAVYDUTY</h1>
+      </div>
+      <div class="topbar-opts">
+        <!-- <a href="#">
+                <span>Home</span>
+            </a> -->
+        <a href="mailto:andresmgsl@gmail.com">
+          <span>Contact us</span>
+          <img
+            src="https://arweave.net/m9tCKIrwKrl3i4J9sB1GkJChkrh66KbL1-6OrpvFNBE"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>
+        <h1>We are comming soon...</h1>
+        <p>
+          Do you own your data? You're the only middleman you can trust.
+          Document-based storage for Solana dapps.
+        </p>
+      </div>
+      <form
+        id="subscription-form"
+        name="subscription"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="fuck-bots"
+      >
+        <div hidden aria-hidden="true">
+          <label>
+            Don’t fill this out if you're human:
+            <input name="fuck-bots" />
+          </label>
+        </div>
+        <div>
+          <input
+            id="email"
+            type="text"
+            placeholder="Write your email"
+            name="email"
+            required
+          />
+          <button type="submit">NOTIFY ME</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div>🄯 2021 HeavyDuty</div>
+      <div>
+        <a href="https://discord.gg/WFbBbxZN" target="_blank">
+          <img
+            src="https://xycjqai56g6atvzjnkoo6jbfcdbh33hhuuqkb5pxaau64tyfeh2q.arweave.net/vgSYAR3xvAnXKWqc7yQlEMJ97OelIKD19wAp7k8FIfU"
+          />
+        </a>
+        <a href="https://twitter.com/heavyduty_" target="_blank">
+          <img
+            src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM"
+          />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      const processSubscriptionForm = (form) => {
+        const data = new FormData(form);
+        data.append("form-name", "subscription");
+        fetch("/", {
+          method: "POST",
+          body: data,
+        })
+          .then(() => {
+            form.innerHTML = `<div class="form-success">Almost there! Check your inbox for a confirmation e-mail.</div>`;
+          })
+          .catch((error) => {
+            form.innerHTML = `<div class="form-error">Error: ${error}</div>`;
+          });
+      };
+
+      const emailSubscriptionForm =
+        document.querySelector("#subscription-form");
+      if (emailSubscriptionForm) {
+        emailSubscriptionForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          processSubscriptionForm(emailSubscriptionForm);
+        });
+      }
+    </script>
+  </body>
+</html>

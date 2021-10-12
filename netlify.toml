@@ -1,0 +1,15 @@
+[build]
+  base = "."
+
+[functions]
+  directory = "./js"
+
+[[headers]]
+  for = "*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+    from = '/functions/*'
+    to = '/.netlify/functions/:splat'
+    status = 200
