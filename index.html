@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="topbar">
+    <header class="header">
       <div class="logo-container">
         <div class="logo">
           <img
@@ -20,54 +20,144 @@
         </div>
         <h1>HEAVYDUTY</h1>
       </div>
-      <div class="topbar-opts">
+      <div class="header-opts">
         <!-- <a href="#">
                 <span>Home</span>
             </a> -->
         <a href="mailto:andresmgsl@gmail.com">
           <span>Contact us</span>
           <img
-            src="https://arweave.net/m9tCKIrwKrl3i4J9sB1GkJChkrh66KbL1-6OrpvFNBE"
+            src="https://arweave.net/hQoGkaIlZH_tD4a7ULCSQuRfQNrHhG9ZNn1iMkUC4Lw"
           />
         </a>
       </div>
-    </div>
+    </header>
 
-    <div class="content">
-      <div>
-        <h1>We are comming soon...</h1>
-        <p>
-          Looking for the machinery that does the heavy duty for you? Don't
-          worry, we got you covered.
-        </p>
-      </div>
-      <form
-        id="subscription-form"
-        name="subscription"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="fuck-bots"
-      >
-        <div hidden aria-hidden="true">
-          <label>
-            Don’t fill this out if you're human:
-            <input name="fuck-bots" />
-          </label>
-        </div>
+    <main class="main-content mb-200">
+      <section class="content mt-350">
         <div>
-          <input
-            id="email"
-            type="text"
-            placeholder="Write your email"
-            name="email"
-            required
-          />
-          <button type="submit">NOTIFY ME</button>
+          <h1>We are comming soon...</h1>
+          <p>
+            Looking for the machinery that does the heavy duty for you? Don't
+            worry, we got you covered.
+          </p>
         </div>
-      </form>
-    </div>
+        <form
+          id="subscription-form"
+          name="subscription"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="fuck-bots"
+        >
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human:
+              <input name="fuck-bots" />
+            </label>
+          </div>
+          <div>
+            <input
+              id="email"
+              type="text"
+              placeholder="Write your email"
+              name="email"
+              required
+            />
+            <button type="submit">NOTIFY ME</button>
+          </div>
+        </form>
+      </section>
 
-    <div class="footer">
+      <section class="content">
+        <h2 class="nice-title mt-100 mb-100" background-title="ROADMAP">
+          OUR ROADMAP
+        </h2>
+
+        <div class="roadmap-wrap mb-100">
+          <div class="roadmap-item mb-60">
+            <div class="roadpmap-steap">
+              <div class="roadmap-step-head mb-10">
+                <span>August, 2021.</span>
+              </div>
+              <p>Alpha release: (Bulldozer-alpha)</p>
+              <ul>
+                <li>Manage Application, collections and instructions</li>
+                <li>Wallet integration</li>
+                <li>Download full code application</li>
+                <li>
+                  Generate and display code for instruction and collection
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-item mb-40">
+            <div class="roadpmap-steap">
+              <div class="roadmap-step-head mb-10">
+                <span>December, 2021.</span>
+              </div>
+              <p>Beta release: (Anchor improvement)</p>
+              <ul>
+                <li>Has_one restriction support</li>
+                <li>Handle for bump and seed for init accounts</li>
+                <li>Introduction of Workspace concept</li>
+                <li>
+                  Alow consumers to choose high level types instead of
+                  primitives
+                </li>
+                <li>
+                  Refactor instruction accounts section for better consumers
+                  use.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-item mb-40">
+            <div class="roadpmap-steap">
+              <div class="roadmap-step-head mb-10">
+                <span>March, 2022.</span>
+              </div>
+              <p>Release: (New Release)</p>
+              <ul>
+                <li>--</li>
+                <li>--</li>
+                <li>--</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-item mb-40">
+            <div class="roadpmap-steap">
+              <div class="roadmap-step-head mb-10">
+                <span>June, 2022.</span>
+              </div>
+              <p>Release: (New Release)</p>
+              <ul>
+                <li>--</li>
+                <li>--</li>
+                <li>--</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-item mb-40">
+            <div class="roadpmap-steap">
+              <div class="roadmap-step-head mb-10">
+                <span>September, 2022.</span>
+              </div>
+              <p>Release: (New Release)</p>
+              <ul>
+                <li>--</li>
+                <li>--</li>
+                <li>--</li>
+              </ul>
+            </div>
+          </div>          
+      </section>
+    </main>
+
+    <footer class="footer">
       <div>🄯 2021 HeavyDuty</div>
       <div>
         <a href="https://discord.gg/Ej47EUAj4u" target="_blank">
@@ -81,7 +171,7 @@
           />
         </a>
       </div>
-    </div>
+    </footer>
 
     <script>
       const processSubscriptionForm = (form) => {
