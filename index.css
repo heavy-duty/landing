@@ -63,14 +63,12 @@ body > * {
   width: 100%;
   min-height: calc(100vh - 301px);
   /* header heigh + footer heigh*/
-  overflow: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
 }
 
 .content {
@@ -119,7 +117,7 @@ body > * {
   position: absolute;
   content: "";
   width: 2px;
-  height: 100%;
+  height: calc(100% + 50px);
   background: #e69400;
   top: -0px;
   left: -0px;
