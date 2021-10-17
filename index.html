@@ -33,10 +33,13 @@
       </div>
     </header>
 
-    <main class="main-content mb-200">
-      <section class="content mt-350">
+    <main class="main-content mb-100">
+      <section
+        class="content mt-350 mt-sm-250 mt-xs-200"
+        aria-labelledby="main-title"
+      >
         <div>
-          <h1>We are comming soon...</h1>
+          <h1 id="main-title">We are comming soon...</h1>
           <p>
             Looking for the machinery that does the heavy duty for you? Don't
             worry, we got you covered.
@@ -48,6 +51,7 @@
           method="POST"
           data-netlify="true"
           netlify-honeypot="fuck-bots"
+          aria-label="email subscription"
         >
           <div hidden aria-hidden="true">
             <label>
@@ -62,24 +66,32 @@
               placeholder="Write your email"
               name="email"
               required
+              aria-label="Your email"
             />
-            <button type="submit">NOTIFY ME</button>
+            <button aria-label="Register email" type="submit">NOTIFY ME</button>
           </div>
         </form>
       </section>
 
-      <section class="content">
-        <h2 class="nice-title mt-100 mb-100" background-title="ROADMAP">
+      <section
+        class="content max-width-550 mt-200 mb-100 mt-xs-100"
+        aria-labelledby="bulldozer-roadmap"
+      >
+        <h2
+          id="bulldozer-roadmap"
+          class="nice-title mb-100"
+          background-title="ROADMAP"
+        >
           OUR ROADMAP
         </h2>
 
-        <div class="roadmap-wrap mb-100">
-          <div class="roadmap-item mb-60">
-            <div class="roadpmap-steap">
-              <div class="roadmap-step-head mb-10">
+        <div class="roadmap-wrap pt-40 pl-40" aria-label="roadmap steps">
+          <div class="roadmap-item mb-60" aria-label="August 2021 release">
+            <div class="roadpmap-step">
+              <div class="roadmap-step-head mb-10 completed">
                 <span>August, 2021.</span>
               </div>
-              <p>Alpha release: (Bulldozer-alpha)</p>
+              <p>Alpha release: (Bulldozer alpha)</p>
               <ul>
                 <li>Manage Application, collections and instructions</li>
                 <li>Wallet integration</li>
@@ -91,34 +103,27 @@
             </div>
           </div>
 
-          <div class="roadmap-item mb-40">
-            <div class="roadpmap-steap">
+          <div class="roadmap-item mb-40" aria-label="December 2021 release">
+            <div class="roadpmap-step">
               <div class="roadmap-step-head mb-10">
                 <span>December, 2021.</span>
               </div>
               <p>Beta release: (Anchor improvement)</p>
               <ul>
-                <li>Has_one restriction support</li>
-                <li>Handle for bump and seed for init accounts</li>
-                <li>Introduction of Workspace concept</li>
-                <li>
-                  Alow consumers to choose high level types instead of
-                  primitives
-                </li>
-                <li>
-                  Refactor instruction accounts section for better consumers
-                  use.
-                </li>
+                <li>Improve Anchor integrations.</li>
+                <li>Manage workspace and allow grouping of applications.</li>
+                <li>Enhance usability across the whole process.</li>
+                <li>Set up continuous integration.</li>
               </ul>
             </div>
           </div>
 
-          <div class="roadmap-item mb-40">
-            <div class="roadpmap-steap">
+          <div class="roadmap-item mb-40" aria-label="March, 2022 release">
+            <div class="roadpmap-step">
               <div class="roadmap-step-head mb-10">
                 <span>March, 2022.</span>
               </div>
-              <p>Release: (New Release)</p>
+              <p>Gamma Release: (New Release)</p>
               <ul>
                 <li>--</li>
                 <li>--</li>
@@ -127,12 +132,12 @@
             </div>
           </div>
 
-          <div class="roadmap-item mb-40">
-            <div class="roadpmap-steap">
+          <div class="roadmap-item mb-40" aria-label="June, 2022 release">
+            <div class="roadpmap-step">
               <div class="roadmap-step-head mb-10">
                 <span>June, 2022.</span>
               </div>
-              <p>Release: (New Release)</p>
+              <p>Delta Release: (New Release)</p>
               <ul>
                 <li>--</li>
                 <li>--</li>
@@ -141,31 +146,42 @@
             </div>
           </div>
 
-          <div class="roadmap-item mb-40">
-            <div class="roadpmap-steap">
+          <div class="roadmap-item mb-40" aria-label="September, 2022 release">
+            <div class="roadpmap-step">
               <div class="roadmap-step-head mb-10">
                 <span>September, 2022.</span>
               </div>
-              <p>Release: (New Release)</p>
+              <p>Epsilon Release: (Bulldozer beta)</p>
               <ul>
                 <li>--</li>
                 <li>--</li>
                 <li>--</li>
               </ul>
             </div>
-          </div>          
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div>🄯 2021 HeavyDuty</div>
+    <footer class="footer" aria-labelledby="footer-text">
+      <div id="footer-text">🄯 2021 HeavyDuty</div>
       <div>
-        <a href="https://discord.gg/Ej47EUAj4u" target="_blank">
+        <a
+          id="bulldozer-discord"
+          href="https://discord.gg/Ej47EUAj4u"
+          arial-laber="Bulldozer Official Discord"
+          target="_blank"
+        >
           <img
             src="https://xycjqai56g6atvzjnkoo6jbfcdbh33hhuuqkb5pxaau64tyfeh2q.arweave.net/vgSYAR3xvAnXKWqc7yQlEMJ97OelIKD19wAp7k8FIfU"
           />
         </a>
-        <a href="https://twitter.com/HeavyDutyBuild" target="_blank">
+        <a
+          id="bulldozer-twitter"
+          href="https://twitter.com/HeavyDutyBuild"
+          arial-laber="Bulldozer Official Twitter"
+          target="_blank"
+        >
           <img
             src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM"
           />

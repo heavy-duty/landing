@@ -21,6 +21,8 @@ body > * {
   width: 100%;
   background-color: #e6e6e6;
   z-index: 10;
+  box-shadow: 0px 4px 15px -4px rgb(0 0 0 / 4%);
+  border-top: 4px solid #e69400;
 }
 
 .header,
@@ -79,7 +81,6 @@ body > * {
   justify-content: center;
   width: 100%;
   max-width: 768px;
-  margin-top: 150px;
 }
 
 .content h1 {
@@ -102,6 +103,7 @@ body > * {
 }
 
 .content .nice-title::after {
+  font-family: "Custom Font";
   color: #272727;
   font-size: 120px !important;
   font-weight: 700;
@@ -116,7 +118,6 @@ body > * {
 .roadmap-wrap {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
   position: relative;
   flex-flow: column;
 }
@@ -125,12 +126,10 @@ body > * {
   position: absolute;
   content: "";
   width: 2px;
-  height: calc(100% + 30px);
+  height: 100%;
   background: #e69400;
   top: -0px;
-}
-.roadmap-item {
-  padding-left: 25px;
+  left: -0px;
 }
 
 .roadmap-step-head {
@@ -143,15 +142,19 @@ body > * {
   text-align: center;
   line-height: 18px;
   color: white;
-  background: #e69400;
+  background: #e6e6e6;
   padding: 5px;
   border-radius: 26px;
   position: absolute;
-  left: -39px;
+  left: -53px;
   top: -3px;
   height: 15px;
   width: 15px;
   border: 2px solid #e69400;
+}
+
+.roadmap-step-head.completed::after {
+  background: #e69400;
 }
 
 .footer {
@@ -254,6 +257,10 @@ button:hover {
   .content button {
     width: 100%;
   }
+
+  .content .nice-title::after {
+    font-size: 95px !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -278,11 +285,23 @@ button:hover {
     display: inline-block;
     margin-top: 5px;
   }
+
+  .content .nice-title::after {
+    font-size: 70px !important;
+  }
 }
 
 /* Utilities */
+.max-width-550 {
+  max-width: 550px;
+}
+
 .mt-100 {
   margin-top: 100px;
+}
+
+.mt-200 {
+  margin-top: 200px;
 }
 
 .mt-350 {
@@ -311,4 +330,35 @@ button:hover {
 
 .mb-200 {
   margin-bottom: 200px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+/*custom lg*/
+@media screen and (max-width: 900px) {
+}
+/*custom md*/
+@media screen and (max-width: 768px) {
+}
+/*custom sm*/
+@media screen and (max-width: 650px) {
+  .mt-sm-250 {
+    margin-top: 250px !important;
+  }
+}
+/*custom xs*/
+@media screen and (max-width: 500px) {
+  .mt-xs-200 {
+    margin-top: 200px !important;
+  }
+
+  .mt-xs-100 {
+    margin-top: 100px !important;
+  }
 }
