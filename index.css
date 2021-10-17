@@ -9,7 +9,6 @@ body {
   background-color: #e6e6e6;
   font-family: "Space Grotesk";
   color: #272727;
-  margin: 0;
 }
 
 body > * {
@@ -31,7 +30,6 @@ body > * {
   justify-content: space-between;
   align-items: center;
   font-family: "Custom Font";
-  padding: 32px;
 }
 
 .logo-container {
@@ -46,7 +44,6 @@ body > * {
 
 .logo-container h1 {
   font-size: 48px;
-  margin: 0px;
   font-weight: 400;
 }
 
@@ -64,7 +61,7 @@ body > * {
 
 .main-content {
   width: 100%;
-  min-height: calc(100vh - 305px);
+  min-height: calc(100vh - 301px);
   /* header heigh + footer heigh*/
   overflow: auto;
   margin: 0 auto;
@@ -84,15 +81,11 @@ body > * {
 }
 
 .content h1 {
-  margin: 0px;
-  margin-bottom: 8px;
   font-weight: 400;
   font-size: 34px;
 }
 
 .content p {
-  margin: 0px;
-  margin-bottom: 10px;
   font-weight: 400;
   line-height: 28px;
 }
@@ -141,7 +134,6 @@ body > * {
   content: "";
   text-align: center;
   line-height: 18px;
-  color: white;
   background: #e6e6e6;
   padding: 5px;
   border-radius: 26px;
@@ -156,6 +148,7 @@ body > * {
 .roadmap-step-head.completed::after {
   background: #e69400;
   content: "✔";
+  color: #e6e6e6;
 }
 
 .footer {
@@ -171,13 +164,11 @@ body > * {
 .form-success {
   background-color: teal;
   color: white;
-  padding: 16px;
 }
 
 .form-error {
   background-color: crimson;
   color: white;
-  padding: 16px;
 }
 
 a {
@@ -297,6 +288,10 @@ button:hover {
   max-width: 550px;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mt-100 {
   margin-top: 100px;
 }
@@ -333,6 +328,14 @@ button:hover {
   margin-bottom: 200px;
 }
 
+.p-16 {
+  padding: 16px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
 .pl-40 {
   padding-left: 40px;
 }
@@ -341,16 +344,14 @@ button:hover {
   padding-top: 40px;
 }
 
-/*custom lg*/
-@media screen and (max-width: 900px) {
-}
-/*custom md*/
-@media screen and (max-width: 768px) {
-}
 /*custom sm*/
 @media screen and (max-width: 650px) {
   .mt-sm-250 {
     margin-top: 250px !important;
+  }
+
+  .mb-sm-100 {
+    margin-bottom: 100px !important;
   }
 }
 /*custom xs*/

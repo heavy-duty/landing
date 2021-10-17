@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
 
-  <body>
-    <header class="header">
+  <body class="m-0">
+    <header class="header p-30">
       <div class="logo-container">
         <div class="logo">
           <img
@@ -18,7 +18,7 @@
             alt="Main logo"
           />
         </div>
-        <h1>HEAVYDUTY</h1>
+        <h1 class="m-0">HEAVYDUTY</h1>
       </div>
       <div class="header-opts">
         <!-- <a href="#">
@@ -33,14 +33,14 @@
       </div>
     </header>
 
-    <main class="main-content mb-100">
+    <main class="main-content m-0 mb-200 mb-sm-100">
       <section
         class="content mt-350 mt-sm-250 mt-xs-200"
         aria-labelledby="main-title"
       >
         <div>
-          <h1 id="main-title">We are comming soon...</h1>
-          <p>
+          <h1 id="main-title" class="m-0 mb-10">We are comming soon...</h1>
+          <p class="m-0 mb-10">
             Looking for the machinery that does the heavy duty for you? Don't
             worry, we got you covered.
           </p>
@@ -54,7 +54,7 @@
           aria-label="email subscription"
         >
           <div hidden aria-hidden="true">
-            <label>
+            <label for="fuck-bots">
               Don’t fill this out if you're human:
               <input name="fuck-bots" />
             </label>
@@ -74,7 +74,7 @@
       </section>
 
       <section
-        class="content max-width-550 mt-200 mb-100 mt-xs-100"
+        class="content max-width-550 mt-200 mt-xs-100"
         aria-labelledby="bulldozer-roadmap"
       >
         <h2
@@ -146,7 +146,7 @@
             </div>
           </div>
 
-          <div class="roadmap-item mb-40" aria-label="September, 2022 release">
+          <div class="roadmap-item" aria-label="September, 2022 release">
             <div class="roadpmap-step">
               <div class="roadmap-step-head mb-10">
                 <span>September, 2022.</span>
@@ -163,7 +163,7 @@
       </section>
     </main>
 
-    <footer class="footer" aria-labelledby="footer-text">
+    <footer class="footer p-30" aria-labelledby="footer-text">
       <div id="footer-text">🄯 2021 HeavyDuty</div>
       <div>
         <a
@@ -198,10 +198,10 @@
           body: data,
         })
           .then(() => {
-            form.innerHTML = `<div class="form-success">Almost there! We'll contact you.</div>`;
+            form.innerHTML = `<div class="form-success p-16">Almost there! We'll contact you.</div>`;
           })
           .catch((error) => {
-            form.innerHTML = `<div class="form-error">Error: ${error}</div>`;
+            form.innerHTML = `<div class="form-error p-16">Error: ${error}</div>`;
           });
       };
 
