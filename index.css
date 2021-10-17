@@ -155,6 +155,7 @@ body > * {
 
 .roadmap-step-head.completed::after {
   background: #e69400;
+  content: "✔";
 }
 
 .footer {
