@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
 
-  <body>
-    <div class="topbar">
+  <body class="m-0">
+    <header class="header p-30">
       <div class="logo-container">
         <div class="logo">
           <img
@@ -18,70 +18,169 @@
             alt="Main logo"
           />
         </div>
-        <h1>HEAVYDUTY</h1>
+        <h1 class="m-0">HEAVYDUTY</h1>
       </div>
-      <div class="topbar-opts">
-        <!-- <a href="#">
-                <span>Home</span>
-            </a> -->
+      <div class="header-opts">
         <a href="mailto:andresmgsl@gmail.com">
           <span>Contact us</span>
           <img
-            src="https://arweave.net/m9tCKIrwKrl3i4J9sB1GkJChkrh66KbL1-6OrpvFNBE"
+            src="https://arweave.net/hQoGkaIlZH_tD4a7ULCSQuRfQNrHhG9ZNn1iMkUC4Lw"
           />
         </a>
       </div>
-    </div>
+    </header>
 
-    <div class="content">
-      <div>
-        <h1>We are comming soon...</h1>
-        <p>
-          Looking for the machinery that does the heavy duty for you? Don't
-          worry, we got you covered.
-        </p>
-      </div>
-      <form
-        id="subscription-form"
-        name="subscription"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="fuck-bots"
+    <main class="main-content m-0 mb-200 mb-sm-100">
+      <section
+        class="content mt-350 mt-sm-250 mt-xs-200"
+        aria-labelledby="main-title"
       >
-        <div hidden aria-hidden="true">
-          <label>
-            Don’t fill this out if you're human:
-            <input name="fuck-bots" />
-          </label>
-        </div>
         <div>
-          <input
-            id="email"
-            type="text"
-            placeholder="Write your email"
-            name="email"
-            required
-          />
-          <button type="submit">NOTIFY ME</button>
+          <h1 id="main-title" class="m-0 mb-10">We are comming soon...</h1>
+          <p class="m-0 mb-10">
+            Looking for the machinery that does the heavy duty for you? Don't
+            worry, we got you covered.
+          </p>
         </div>
-      </form>
-    </div>
+        <form
+          id="subscription-form"
+          name="subscription"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="fuck-bots"
+          aria-label="email subscription"
+        >
+          <div hidden aria-hidden="true">
+            <label for="fuck-bots">
+              Don’t fill this out if you're human:
+              <input name="fuck-bots" />
+            </label>
+          </div>
+          <div>
+            <input
+              id="email"
+              type="text"
+              placeholder="Write your email"
+              name="email"
+              required
+              aria-label="Your email"
+            />
+            <button aria-label="Register email" type="submit">NOTIFY ME</button>
+          </div>
+        </form>
+      </section>
 
-    <div class="footer">
-      <div>🄯 2021 HeavyDuty</div>
+      <section
+        class="content max-width-550 mt-200 mt-xs-100"
+        aria-labelledby="bulldozer-roadmap"
+      >
+        <h2
+          id="bulldozer-roadmap"
+          class="nice-title mb-100"
+          background-title="ROADMAP"
+        >
+          OUR ROADMAP
+        </h2>
+
+        <div class="roadmap-wrap pt-40 pl-40" aria-label="roadmap steps">
+          <div class="roadmap-item mb-60" aria-label="August 2021 release">
+            <div class="roadpmap-step">
+              <div class="roadmap-step-head mb-10 completed">
+                <span>August, 2021.</span>
+              </div>
+              <ul>
+                <li>Manage Application, collections and instructions</li>
+                <li>Wallet integration</li>
+                <li>Download full code application</li>
+                <li>
+                  Generate and display code for instruction and collection
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-item mb-40" aria-label="December 2021 release">
+            <div class="roadpmap-step">
+              <div class="roadmap-step-head mb-10">
+                <span>December, 2021.</span>
+              </div>
+              <ul>
+                <li>Improve Anchor integrations.</li>
+                <li>Enhance usability across the whole process.</li>
+                <li>Set up continuous integration.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-item mb-40" aria-label="March, 2022 release">
+            <div class="roadpmap-step">
+              <div class="roadmap-step-head mb-10">
+                <span>March, 2022.</span>
+              </div>
+              <ul>
+                <li>Manage workspace and allow grouping of applications.</li>
+                <li>Enable real-time updates through events.</li>
+                <li>Improve template engine.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-item mb-40" aria-label="June, 2022 release">
+            <div class="roadpmap-step">
+              <div class="roadmap-step-head mb-10">
+                <span>June, 2022.</span>
+              </div>
+              <ul>
+                <li>Git integration for versioning of workspaces.</li>
+                <li>
+                  CLI to list, build and deploy workspaces and applications.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="roadmap-item" aria-label="September, 2022 release">
+            <div class="roadpmap-step">
+              <div class="roadmap-step-head mb-10">
+                <span>September, 2022.</span>
+              </div>
+              <ul>
+                <li>
+                  Cross program invocation between applications in a workspace.
+                </li>
+                <li>Plugin-support for community utilities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer p-30" aria-labelledby="footer-text">
+      <div id="footer-text">🄯 2021 HeavyDuty</div>
       <div>
-        <a href="https://discord.gg/Ej47EUAj4u" target="_blank">
+        <a
+          id="bulldozer-discord"
+          href="https://discord.gg/Ej47EUAj4u"
+          arial-laber="Bulldozer Official Discord"
+          target="_blank"
+        >
           <img
             src="https://xycjqai56g6atvzjnkoo6jbfcdbh33hhuuqkb5pxaau64tyfeh2q.arweave.net/vgSYAR3xvAnXKWqc7yQlEMJ97OelIKD19wAp7k8FIfU"
           />
         </a>
-        <a href="https://twitter.com/HeavyDutyBuild" target="_blank">
+        <a
+          id="bulldozer-twitter"
+          href="https://twitter.com/HeavyDutyBuild"
+          arial-laber="Bulldozer Official Twitter"
+          target="_blank"
+        >
           <img
             src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM"
           />
         </a>
       </div>
-    </div>
+    </footer>
 
     <script>
       const processSubscriptionForm = (form) => {
@@ -92,10 +191,10 @@
           body: data,
         })
           .then(() => {
-            form.innerHTML = `<div class="form-success">Almost there! We'll contact you.</div>`;
+            form.innerHTML = `<div class="form-success p-16">Almost there! We'll contact you.</div>`;
           })
           .catch((error) => {
-            form.innerHTML = `<div class="form-error">Error: ${error}</div>`;
+            form.innerHTML = `<div class="form-error p-16">Error: ${error}</div>`;
           });
       };
 
